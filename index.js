@@ -29,7 +29,7 @@ var vlcs = {},
     request = require('request'),
     events = require('events'),
     path = require('path'),
-    relbase = "./"+path.relative(path.dirname(require.main.filename), __dirname),
+    relbase = relbase = "../"+path.relative(path.dirname(process.cwd()), __dirname),
     sleepId = 0;
 
 require('jquery-ui/sortable');
